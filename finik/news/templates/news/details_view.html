@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Новость{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.data }}</p>
+        <p>{{ article.full_text }}</p>
+        <a href="{% url 'news_home' %}" class="btn btn-warning">Вернуться назад</a>
+
+
+        {# Комментарии #}
+    </div>
+{% endblock %}
