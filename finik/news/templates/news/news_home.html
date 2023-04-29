@@ -1,10 +1,15 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Новости на сайте{% endblock %}
+{% block title %}Обучение{% endblock %}
 
 {% block content %}
 <div class="features">
-    <h1>Новости</h1>
+    <h1>ПРОГРАММА КУРСА</h1>
+    <p>МОДУЛЬ 1 ВРАЧ - БРЕНД Сила личного бренда Как выделиться среди других медблогов</p>
+    <p>МОДУЛЬ 2 УПАКОВКА Шапка профиля Визуал</p>
+    <p>МОДУЛЬ 3 ВОВЛЕЧЕНИЕ Медтексты. Сторителлинг Stories</p>
+    <p>МОДУЛЬ 4 ПРИВЛЕЧЕНИЕ Методы продвижения Reels</p>
+    <h2>ВЫБРАТЬ ТАРИФ</h2>
     {% if news %}
         {% for el in news %}
             <div class="alert alert-warning">
